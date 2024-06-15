@@ -1,39 +1,81 @@
-WorkManager Codelab
-===================================
+# Bluromatic
 
-This repository contains the code for the [WorkManager Codelab](https://developer.android.com/codelabs/basic-android-kotlin-compose-workmanager).
+Bluromatic é um aplicativo Android que aplica efeitos de desfoque em imagens utilizando o WorkManager. Este projeto é uma implementação de exemplo para demonstrar o uso do WorkManager, Jetpack Compose e outras bibliotecas do Android.
 
-Introduction
-------------
 
-At I/O 2018, Google announced [Android Jetpack](https://developer.android.com/jetpack/), a collection of libraries, tools, and architectural guidance to accelerate and simplify the development of great Android apps. One of those libraries is the [WorkManager library](https://developer.android.com/topic/libraries/architecture/workmanager/). The WorkManager library provides a unified API for deferrable one-off or recurring background tasks that need guaranteed execution. You can learn more by reading the [WorkManager Guide](https://developer.android.com/topic/libraries/architecture/workmanager/), the [WorkManager Reference](https://developer.android.com/reference/androidx/work/package-summary) or doing the [WorkManager Codelab](https://developer.android.com/codelabs/basic-android-kotlin-compose-workmanager).
+## Índice
 
-Pre-requisites
---------------
+- [Visão Geral](#visão-geral)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Licença](#licença)
 
-* Familiarity with how to open, build, and run apps with Android Studio.
 
-* Make sure Android Studio is updated, as well as your SDK and Gradle. Otherwise, you may have to wait for a while until all the updates are done.
+## Visão Geral
 
-* A device or emulator that runs API level 21+
+Este projeto foi desenvolvido como parte do Android Open Source Project e é licenciado sob a Licença Apache, Versão 2.0.
 
-You need to be solidly familiar with the Kotlin programming language, object-oriented design concepts, and Android Development Fundamentals.
 
-In particular:
+## Funcionalidades
 
-* Basics of [Jetpack Compose](https://developer.android.com/courses/pathways/compose)
-* Some familiarity with URIs and File I/O
-* Familiarity with [Kotlin Flow](https://developer.android.com/kotlin/flow) and [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
+- Aplicação de diferentes níveis de desfoque em imagens.
+- Visualização da imagem desfocada.
+- Cancelamento de tarefas de desfoque em andamento.
+- Interface de usuário moderna com Jetpack Compose.
 
-Getting Started
----------------
 
-1. [Install Android Studio](https://developer.android.com/studio/install.html), if you don't already have it.
-2. Download the sample.
-3. Import the sample into Android Studio.
-4. Build and run the sample.
+## Tecnologias Utilizadas
 
-Notes:
-- The application code contains a battery not low constraint. If the device/emulator has a low battery, the application will appear to hang until this constraint is met.
+- **WorkManager**: Para gerenciar e agendar tarefas assíncronas que continuam mesmo que o aplicativo seja encerrado.
+- **Jetpack Compose**: Para criar interfaces de usuário modernas e responsivas.
+- **Kotlin Coroutines**: Para operações assíncronas e gerenciamento de threads.
+- **NotificationCompat**: Para mostrar notificações durante a execução das tarefas de desfoque e salvamento.
+- **Bitmap**: Para manipulação e processamento de imagens.
+- **ContentResolver**: Para acessar e salvar imagens no armazenamento do dispositivo.
 
-- The app requires notifications to be enabled. To enable notifications, navigate to the Android Settings menu > Apps > Blur-O-Matic > Notifications > Enable "All Blur-O-Matic notifications".
+
+## Instalação
+
+1. Clone este repositório 
+2. Abra o projeto no Android Studio.
+3. Sincronize o projeto com Gradle para baixar todas as dependências necessárias.
+
+
+## Uso
+1. Execute o aplicativo em um dispositivo Android ou emulador.
+
+2. Na tela principal, selecione o nível de desfoque desejado.
+
+3. Clique no botão "Start" para iniciar o processo de desfoque.
+
+4. Após a conclusão, você pode visualizar a imagem desfocada ou cancelar o processo a qualquer momento.
+
+
+## Estrutura do Projeto
+
+- `data/`: Contém as classes relacionadas ao repositório e aos dados da aplicação.
+  - `AppContainer.kt`: Define a interface e a implementação do contêiner de dependências.
+  - `BlurAmount.kt`: Modelo de dados para os níveis de desfoque.
+  - `BlurAmountData.kt`: Dados estáticos dos níveis de desfoque.
+  - `BluromaticRepository.kt`: Interface do repositório.
+  - `WorkManagerBluromaticRepository.kt`: Implementação do repositório utilizando o WorkManager.
+
+- `ui/`: Contém as classes e funções relacionadas à interface do usuário.
+  - `BluromaticScreen.kt`: Tela principal do aplicativo.
+  - `BlurViewModel.kt`: ViewModel para gerenciar o estado da tela.
+
+- `workers/`: Contém as classes relacionadas às tarefas de trabalho do WorkManager.
+  - `BlurWorker.kt`: Tarefa de trabalho para aplicar o desfoque.
+  - `CleanupWorker.kt`: Tarefa de limpeza.
+  - `SaveImageToFileWorker.kt`: Tarefa para salvar a imagem em um arquivo.
+  - `WorkerUtils.kt`: Utilitários para criar notificações e manipular imagens.
+
+- `BlurActivity.kt`: Atividade principal que inicia a tela do Bluromatic.
+
+
+## Licença
+Este projeto está licenciado sob a Licença Apache, Versão 2.0. Consulte o arquivo LICENSE para obter mais informações.
+
