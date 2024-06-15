@@ -1,22 +1,17 @@
 # Bluromatic
 
-Bluromatic é um aplicativo Android que aplica efeitos de desfoque em imagens utilizando o WorkManager. Este projeto é uma implementação de exemplo para demonstrar o uso do WorkManager, Jetpack Compose e outras bibliotecas do Android.
+Bluromatic é um aplicativo Android que aplica efeitos de desfoque em imagens utilizando o WorkManager. Este projeto é uma implementação de exemplo para demonstrar o uso do WorkManager, Jetpack Compose e outras bibliotecas do Android. Essse projeto foi baseado nesse codelab: [WorkManager Codelab](https://developer.android.com/codelabs/basic-android-kotlin-compose-verify-background-work?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-7-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-verify-background-work#4).
 
 
 ## Índice
 
-- [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Capturas de Tela](#capturas-de-tela)
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Licença](#licença)
-
-
-## Visão Geral
-
-Este projeto foi desenvolvido como parte do Android Open Source Project e é licenciado sob a Licença Apache, Versão 2.0.
 
 
 ## Funcionalidades
@@ -35,6 +30,17 @@ Este projeto foi desenvolvido como parte do Android Open Source Project e é lic
 - **NotificationCompat**: Para mostrar notificações durante a execução das tarefas de desfoque e salvamento.
 - **Bitmap**: Para manipulação e processamento de imagens.
 - **ContentResolver**: Para acessar e salvar imagens no armazenamento do dispositivo.
+
+
+## Capturas de Tela
+
+<img src="home.png" alt="Tela Home" width="400" height="790">
+
+<img src="loading.png" alt="Tela Carregando" width="400" height="790">
+
+<img src="see_file.png" alt="See file" width="400" height="790">
+
+<img src="file_blurred.png" alt="Captura de Tela" width="400" height="790">
 
 
 ## Instalação
