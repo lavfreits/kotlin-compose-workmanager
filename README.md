@@ -72,9 +72,3 @@ Bluromatic é um aplicativo Android que aplica efeitos de desfoque em imagens ut
   - `SaveImageToFileWorker.kt`: Tarefa para salvar a imagem em um arquivo.
   - `WorkerUtils.kt`: Utilitários para criar notificações e manipular imagens.
 
-- `BlurActivity.kt`: Atividade principal que inicia a tela do Bluromatic.
-
-
-## Licença
-Este projeto está licenciado sob a Licença Apache, Versão 2.0. Consulte o arquivo LICENSE para obter mais informações.
-
