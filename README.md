@@ -34,13 +34,6 @@ Bluromatic é um aplicativo Android que aplica efeitos de desfoque em imagens ut
 
 ## Capturas de Tela
 
-<img src="home.png" alt="Tela Home" width="400" height="790">
-
-<img src="loading.png" alt="Tela Carregando" width="400" height="790">
-
-<img src="see_file.png" alt="See file" width="400" height="790">
-
-<img src="file_blurred.png" alt="Captura de Tela" width="400" height="790">
 
 
 ## Instalação
