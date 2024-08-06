@@ -2,6 +2,9 @@
 
 Bluromatic é um aplicativo Android que aplica efeitos de desfoque em imagens utilizando o WorkManager. Este projeto é uma implementação de exemplo para demonstrar o uso do WorkManager, Jetpack Compose e outras bibliotecas do Android. Essse projeto foi baseado nesse codelab: [WorkManager Codelab](https://developer.android.com/codelabs/basic-android-kotlin-compose-verify-background-work?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-7-pathway-1%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-verify-background-work#4).
 
+## Gravação de Tela
+![Kotlin Compose WorkManager](https://raw.githubusercontent.com/lavfreits/kotlin-compose-workmanager/master/screen_recording.gif)
+
 
 ## Índice
 
@@ -30,9 +33,6 @@ Bluromatic é um aplicativo Android que aplica efeitos de desfoque em imagens ut
 - **NotificationCompat**: Para mostrar notificações durante a execução das tarefas de desfoque e salvamento.
 - **Bitmap**: Para manipulação e processamento de imagens.
 - **ContentResolver**: Para acessar e salvar imagens no armazenamento do dispositivo.
-
-
-## Capturas de Tela
 
 
 
